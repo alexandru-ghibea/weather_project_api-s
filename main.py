@@ -21,7 +21,7 @@ if will_rain:
     client = Client(account_sid, auth_token)
     message = client.messages.create(
         body="It's going to rain today. Remember to bring an umbrella ☂️!",
-        from_="+18063046310",
-        to='+40729525092'
+        from_="twillo_phone_number",
+        to='phone'
     )
     print(message.status)
